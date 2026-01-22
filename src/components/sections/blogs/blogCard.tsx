@@ -14,7 +14,7 @@ const BlogCard = ({ news, className }: { news: BlogPostDataType, className?: str
                 </div>
             </div>
             <div className="news-content">
-                <ul>
+                {/* <ul>
                     <li>
                         <i className="fa-regular fa-user" />
                         By {news.author}
@@ -23,7 +23,7 @@ const BlogCard = ({ news, className }: { news: BlogPostDataType, className?: str
                         <i className="fa-solid fa-tag" />
                         {news.category}
                     </li>
-                </ul>
+                </ul> */}
                 <h3>
                     <Link to={news.link}>{news.title}</Link>
                 </h3>

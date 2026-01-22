@@ -10,8 +10,8 @@ const BlogsThree = () => {
             <div className="container">
                 <div className="section-title-area">
                     <SectionTitle>
-                        <SectionTitle.SubTitle>Latest Blog</SectionTitle.SubTitle>
-                        <SectionTitle.Title>Our Latest Blog</SectionTitle.Title>
+                        <SectionTitle.SubTitle>Latest News</SectionTitle.SubTitle>
+                        <SectionTitle.Title>Our Latest News</SectionTitle.Title>
                     </SectionTitle>
                     <div className="array-button">
                         <button className="array-prev"><i className="fa fa-arrow-right" /></button>
