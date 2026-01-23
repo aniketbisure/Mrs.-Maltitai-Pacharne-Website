@@ -18,11 +18,11 @@
         right: 0;
     }
 
-    @include breakpoint(max-xl){
+    @include breakpoint(max-xl) {
         padding: 60px 0 90px;
     }
 
-    @include breakpoint(max-lg){
+    @include breakpoint(max-lg) {
         padding: 50px 0 70px;
     }
 
@@ -32,8 +32,8 @@
         .widget-head {
             margin-bottom: 30px;
 
-            @include breakpoint (max-sm){
-               margin-bottom: 20px;
+            @include breakpoint (max-sm) {
+                margin-bottom: 20px;
             }
 
             h3 {
@@ -57,22 +57,22 @@
                 position: relative;
                 z-index: 9;
 
-                @include breakpoint (max-sm){
+                @include breakpoint (max-sm) {
                     margin-top: 20px;
                 }
 
-            a {
-                width: 36px;
-                height: 36px;
-                line-height: 36px;
-                text-align: center;
-                font-size: 16px;
-                display: block;
-                color: $white;
-                transition: all .4s ease-in-out;
-                text-align: center;
-                background-color: transparent;
-                border: 1px solid rgba(227, 227, 227, .2);
+                a {
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    font-size: 16px;
+                    display: block;
+                    color: $white;
+                    transition: all .4s ease-in-out;
+                    text-align: center;
+                    background-color: transparent;
+                    border: 1px solid rgba(227, 227, 227, .2);
 
                     &:hover {
                         background-color: $theme-color;
@@ -88,20 +88,20 @@
                 li {
                     color: $white;
 
-                    &:not(:last-child){
+                    &:not(:last-child) {
                         margin-bottom: 20px;
                     }
 
-                   i {
+                    i {
                         font-size: 16px;
                         color: $white;
                         margin-right: 10px;
                         font-size: 20px;
-                   }
+                    }
 
-                   a {
+                    a {
                         color: $white;
-                   }
+                    }
                 }
             }
 
@@ -143,11 +143,11 @@
             }
         }
 
-       .list-area {
+        .list-area {
             li {
                 @include transition;
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-bottom: 15px;
                 }
 
@@ -161,14 +161,15 @@
 
                 &:hover {
                     margin-left: 5px;
+
                     a {
                         color: $theme-color;
                     }
                 }
             }
-       }
+        }
 
-       .recent-post-area {
+        .recent-post-area {
             .recent-post-items {
                 @include flex;
                 gap: 20px;
@@ -205,48 +206,49 @@
                     }
                 }
             }
-       }
+        }
 
-       .footer-post {
-        .single-post-item {
-            overflow: hidden;
-            .thumb {
-                width: 80px;
-                height: 80px;
-                float: left;
-                margin-right: 20px;
-            }
+        .footer-post {
+            .single-post-item {
+                overflow: hidden;
 
-            .post-content {
-                .post-date {
-                    color: $theme-color;
-                    margin-bottom: 10px;
-
-                    i {
-                        margin-right: 10px;
-                    }
+                .thumb {
+                    width: 80px;
+                    height: 80px;
+                    float: left;
+                    margin-right: 20px;
                 }
 
-                h6 {
-                    font-size: 16px;
+                .post-content {
+                    .post-date {
+                        color: $theme-color;
+                        margin-bottom: 10px;
 
-                    a {
-                        color: $text-color;
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
 
-                        &:hover {
-                            color: $theme-color;
+                    h6 {
+                        font-size: 16px;
+
+                        a {
+                            color: $text-color;
+
+                            &:hover {
+                                color: $theme-color;
+                            }
                         }
                     }
                 }
             }
         }
-       }
 
-       &.style-margin {
-            @include breakpoint (xl){
+        &.style-margin {
+            @include breakpoint (xl) {
                 margin-left: 70px;
             }
-       }
+        }
     }
 
     .footer-style-2 {
@@ -299,23 +301,23 @@
     position: relative;
     z-index: 9;
     background-color: $theme-color;
-    
+
     .footer-wrapper {
-       @include breakpoint (max-lg){
+        @include breakpoint (max-lg) {
             flex-wrap: wrap;
             gap: 10px;
             justify-content: center !important;
             margin-top: 30px;
-       }
+        }
 
         p {
             color: $white;
 
             a {
-               color:  $white;
+                color: $white;
             }
         }
-        
+
         .footer-menu {
             @include flex;
             gap: 20px;
@@ -323,7 +325,7 @@
             li {
                 a {
                     color: $white;
-                    background-image: linear-gradient($white,$white);
+                    background-image: linear-gradient($white, $white);
                     background-position: 0 95%;
                     background-repeat: no-repeat;
                     background-size: 0% 2px;
@@ -336,7 +338,7 @@
                 }
             }
         }
-    
+
     }
 
     .scroll-icon {
@@ -357,35 +359,36 @@
     }
 
     &.style-2 {
-       background-color: rgba(122, 135, 255, .15);
+        background-color: $theme-color-2;
 
-       .footer-wrapper {
-       
-         p {
-            color: rgba(255, 255, 255, 0.8);;
- 
-             a {
+        .footer-wrapper {
+
+            p {
                 color: rgba(255, 255, 255, 0.8);
-             }
-         }
-         
-         .footer-menu {
-             li {
-                 a {
-                    color: rgba(255, 255, 255, 0.8);
-                 }
-             }
-         }
-     
-       }
+                ;
 
-       .scroll-icon {
+                a {
+                    color: rgba(255, 255, 255, 0.8);
+                }
+            }
+
+            .footer-menu {
+                li {
+                    a {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
+
+        }
+
+        .scroll-icon {
             left: 93%;
 
-            @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 left: 50%;
             }
-       }
+        }
     }
 
     &.style-3 {
@@ -396,43 +399,44 @@
             background-color: rgba(122, 135, 255, .15);
             padding: 35px 30px;
 
-            @include breakpoint (max-lg){
+            @include breakpoint (max-lg) {
                 gap: 30px;
                 justify-content: space-between !important;
             }
 
-            @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 justify-content: center !important;
             }
 
             p {
-                color: rgba(255, 255, 255, 0.8);;
-     
-                 a {
+                color: rgba(255, 255, 255, 0.8);
+                ;
+
+                a {
                     color: rgba(255, 255, 255, 0.8);
-                 }
+                }
             }
         }
 
         .scroll-icon {
-           top: 25%;
-           left: 93%;
+            top: 25%;
+            left: 93%;
 
-           @include breakpoint (max-xxl){
+            @include breakpoint (max-xxl) {
                 left: 50%;
                 top: 5%;
-           }
+            }
 
-           @include breakpoint (max-md){
+            @include breakpoint (max-md) {
                 left: 78%;
                 top: 50%;
             }
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 left: 90%;
                 top: 50%;
             }
-       }
+        }
     }
 
     &.style-4 {
@@ -447,7 +451,7 @@
     padding-top: 80px;
     padding-bottom: 50px;
 
-    @include breakpoint (max-md){
+    @include breakpoint (max-md) {
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center
@@ -467,7 +471,7 @@
         }
     }
 }
-  
+
 .footer-section {
     position: relative;
 
@@ -488,4 +492,4 @@
         top: 0;
         left: -5%;
     }
-}  
+}

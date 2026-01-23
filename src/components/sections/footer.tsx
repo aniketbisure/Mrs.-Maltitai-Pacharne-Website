@@ -5,19 +5,19 @@ const contactInfo = [
     {
         icon: <SuCallMessage />,
         label: "Call Us 7/24",
-        value: "+208-555-0112",
-        link: "tel:+2085550112",
+        value: "9850443831",
+        link: "tel:9850443831",
     },
     {
         icon: <SuEmail />,
-        label: "Make a Quote",
-        value: "Solar@gmail.com",
-        link: "mailto:infotech@gmail.com",
+        label: "Email",
+        value: "admin@maltibaburaopacharne.in",
+        link: "mailto:admin@maltibaburaopacharne.in",
     },
     {
         icon: <SuLocation />,
         label: "Location",
-        value: "4517 Washington ave.",
+        value: "Shirur, Pune",
     },
 ];
 
@@ -58,7 +58,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-wrapper d-flex align-items-center justify-content-between">
                         <p className="wow slideLeft color-2" data-delay=".3">
-                            © All Copyright 2025 by <Link to="https://www.mastermindmedias.com/" target="_blank" style={{ color: "#FF9933",font:"bold"}}>Mastermind Medias</Link> {" "}
+                            © All Copyright 2025 by <Link to="https://www.mastermindmedias.com/" target="_blank" style={{ color: "#FF9933", font: "bold" }}>Mastermind Medias</Link> {" "}
                         </p>
                         <ul className="footer-menu wow slideRight" data-delay=".5">
                             <li>
