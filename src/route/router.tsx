@@ -3,6 +3,9 @@ import Error from "@/pages/404";
 import HomeThreeSingle from "@/pages/home-three-single";
 import { createBrowserRouter } from "react-router-dom";
 
+import TermsAndConditions from "@/pages/terms-and-conditions";
+import PrivacyPolicy from "@/pages/privacy-policy";
+
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -12,10 +15,18 @@ export const router = createBrowserRouter([
                 path: "/",
                 element: <HomeThreeSingle />
             },
+            {
+                path: "/terms-and-conditions",
+                element: <TermsAndConditions />
+            },
+            {
+                path: "/privacy-policy",
+                element: <PrivacyPolicy />
+            },
         ]
     },
     {
-        path:'*',
-        element:<Error/>
+        path: '*',
+        element: <Error />
     },
 ])
