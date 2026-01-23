@@ -1,5 +1,4 @@
 import { ProjectDataType } from "@/db/projectsOneData";
-import { Link } from "react-router-dom";
 
 type ProjectCardPropsType = {
     project: ProjectDataType;
@@ -7,7 +6,7 @@ type ProjectCardPropsType = {
     iconCalss?: string;
     isIconShow?: boolean
 }
-const ProjectCard = ({ project, className, iconCalss, isIconShow=true }: ProjectCardPropsType) => {
+const ProjectCard = ({ project, className }: ProjectCardPropsType) => {
     return (
         <div className={`project-items ${className}`}>
             <div className="project-image">
