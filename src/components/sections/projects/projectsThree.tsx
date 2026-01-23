@@ -5,26 +5,15 @@ import { Autoplay, Pagination } from "swiper/modules"
 import 'swiper/css'
 import 'swiper/css/pagination'
 import ProjectCard from "./projectCard"
-import SectionTitle from "@/components/ui/sectionTitle"
 import ModalVideo from 'react-modal-video';
 
 const ProjectsThree = () => {
     const [isOpen, setOpen] = useState(false);
     return (
-        <section id="gallery" className="project-section-3 section-padding pb-0 fix bg-cover" style={{ backgroundImage: 'url("/img/testimonial/bg.jpg")' }}>
+        <section id="gallery" className="project-section-3 pb-0 fix bg-cover">
             <div className="container">
-                <div className="section-title-area">
-                    <SectionTitle>
-                        <SectionTitle.SubTitle className="text-white">Gallery</SectionTitle.SubTitle>
-                        <SectionTitle.Title className="text-white">Our Gallery</SectionTitle.Title>
-                    </SectionTitle>
-                    <div className="video-box">
-                        <a href="#" onClick={(e) => { e.preventDefault(), setOpen(true) }} className="video-btn ripple video-popup">
-                            <i className="fa-solid fa-play" />
-                        </a>
-                    </div>
-                </div>
-                <div className="project-wrapper style-2">
+
+                <div className="project-wrapper style-2 mb-4">
                     <Swiper
                         spaceBetween={30}
                         speed={1500}
@@ -53,9 +42,6 @@ const ProjectsThree = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div>
-                <div className="swiper-dot-2 mr-left">
-                    <div className="dot-2" />
                 </div>
             </div>
             <ModalVideo

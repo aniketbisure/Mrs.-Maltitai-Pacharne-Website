@@ -233,15 +233,11 @@
     position: relative;
 
     &::before {
-        @include before;
-        background: #0CA9E6;
-        opacity: .9;
+        display: none;
     }
 
     &::after {
-        @include before;
-        background: $white;
-        top: 60%;
+        display: none;
     }
 
     @include breakpoint (max-sm) {

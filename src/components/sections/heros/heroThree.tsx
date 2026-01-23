@@ -8,16 +8,17 @@ import { motion } from "motion/react"
 const heroSlides = [
     {
         id: 1,
-        image: '/img/hero/hero-5.jpg'
+        image: '/img/hero/s1.jpeg',
+        bgSize: '100% 100%'
     },
     {
         id: 2,
-        image: '/img/hero/hero-6.jpg',
+        image: '/img/hero/s2.jpeg',
     },
-    {
-        id: 3,
-        image: '/img/hero/hero-7.jpg',
-    },
+    // {
+    //     id: 3,
+    //     image: '/img/hero/s3.jpeg',
+    // },
 ];
 const HeroThree = () => {
     return (
@@ -52,7 +53,10 @@ const HeroThree = () => {
                             <>
                                 <div
                                     className="hero-image bg-cover"
-                                    style={{ backgroundImage: `url(${slide.image})` }}
+                                    style={{
+                                        backgroundImage: `url(${slide.image})`,
+                                        backgroundSize: slide.bgSize || 'cover'
+                                    }}
                                 />
                                 <div className="container">
                                     <div className="row justify-content-center">

@@ -9,16 +9,10 @@ export const menuDataSingleHomePage: MenuItemDataType[] = [
         title: 'About',
         link: '#about',
     },
-    {
-        title: 'Services',
-        link: '#services',
-    },
+
     {
         title: 'Gallery',
         link: '#gallery',
     },
-    {
-        title: 'News',
-        link: '#blog',
-    },
+
 ];

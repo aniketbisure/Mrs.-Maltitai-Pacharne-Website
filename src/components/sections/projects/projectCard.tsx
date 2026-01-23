@@ -12,7 +12,7 @@ const ProjectCard = ({ project, className, iconCalss, isIconShow=true }: Project
         <div className={`project-items ${className}`}>
             <div className="project-image">
                 <img src={project.image} alt="project-img" />
-                <div className="project-content">
+                {/* <div className="project-content">
                     <p>{project.category}</p>
                     <h4>
                         <Link to={project.link}>{project.title}</Link>
@@ -23,7 +23,7 @@ const ProjectCard = ({ project, className, iconCalss, isIconShow=true }: Project
                             <i className="fa-solid fa-arrow-right" />
                         </Link>
                     }
-                </div>
+                </div> */}
             </div>
         </div>
     )

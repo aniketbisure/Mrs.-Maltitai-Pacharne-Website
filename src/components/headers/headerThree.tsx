@@ -16,8 +16,9 @@ const HeaderThree = () => {
                         <div className="header-main">
                             <div className="header-left">
                                 <div className="logo">
-                                    <Link to="/" className="header-logo">
-                                        <img src="/img/logo/black-logo.svg" alt="logo-img" />
+                                    <Link to="/" className="header-logo d-flex align-items-center gap-2">
+                                        <img src="/img/new image/BJP-logo.png" alt="logo-img" style={{ maxWidth: '80px' }} />
+                                        <h4 className="m-0">मालतीताई बाबुरावजी पाचर्णे</h4>
                                     </Link>
                                 </div>
                             </div>
@@ -30,26 +31,7 @@ const HeaderThree = () => {
                                     </div>
                                 </div>
                                 <SearchPopup />
-                                <div className="header-button">
-                                    <a href="#services" className="theme-btn bg-white" onClick={(e) => {
-                                        e.preventDefault();
-                                        const element = document.querySelector('#services');
-                                        if (element) {
-                                            const headerOffset = 100;
-                                            const elementPosition = element.getBoundingClientRect().top;
-                                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                                            window.scrollTo({
-                                                top: offsetPosition,
-                                                behavior: 'smooth'
-                                            });
-                                        }
-                                    }}>
-                                        <span>
-                                            get A Quote
-                                            <i className="fa-solid fa-arrow-right-long" />
-                                        </span>
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
