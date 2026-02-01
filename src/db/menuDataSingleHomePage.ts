@@ -6,7 +6,7 @@ export const menuDataSingleHomePage: MenuItemDataType[] = [
         link: '#hero',
     },
     {
-        title: 'About',
+        title: 'About Us',
         link: '#about',
     },
 

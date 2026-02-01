@@ -17,7 +17,7 @@ const HeaderThree = () => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link to="/" className="header-logo d-flex align-items-center gap-2">
-                                        <img src="/img/new image/BJP-logo.png" alt="logo-img" style={{ maxWidth: '80px' }} />
+                                        <img src="/img/new-image/BJP-logo.png" alt="logo-img" style={{ maxWidth: '80px' }} />
                                         <h4 className="m-0">मालतीताई बाबुरावजी पाचर्णे</h4>
                                     </Link>
                                 </div>

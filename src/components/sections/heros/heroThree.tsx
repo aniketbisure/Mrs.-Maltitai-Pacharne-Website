@@ -8,17 +8,17 @@ import { motion } from "motion/react"
 const heroSlides = [
     {
         id: 1,
-        image: '/img/hero/s1.jpeg',
+        image: '/img/new-image/1.jpeg',
         bgSize: '100% 100%'
     },
     {
         id: 2,
-        image: '/img/hero/s2.jpeg',
+        image: '/img/new-image/2.jpeg',
     },
-    // {
-    //     id: 3,
-    //     image: '/img/hero/s3.jpeg',
-    // },
+    {
+        id: 3,
+        image: '/img/new-image/3.jpeg',
+    },
 ];
 const HeroThree = () => {
     return (

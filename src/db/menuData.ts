@@ -63,7 +63,7 @@ export const menuData: MenuItemDataType[] = [
     ],
   },
   {
-    title: 'About',
+    title: 'About Us',
     link: '/about',
   },
   {
